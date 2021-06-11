@@ -5,4 +5,4 @@ def home(request):
     context = {
         'title': 'This'
     }
-    return render(request, 'actualgame/main.html', context)
+    return render(request, 'main/main.html', context)
