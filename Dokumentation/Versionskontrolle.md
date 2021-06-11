@@ -15,3 +15,10 @@ Checkout des Repositories funktioniert über:
 git clone "https://gitlab.com/JulianAtSogeti/praxisprojektbootcamp.git"
 ```
 
+Falls nicht schon als Standardeinstellung sollte jedes Teammitglied seinen Namen und seine E-Mail einstellen:
+
+```bash
+git config --global user.name "Name Nachname"
+git config --global user.email name.nachname@sogeti.com
+```
+
