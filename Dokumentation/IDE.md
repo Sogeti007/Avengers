@@ -10,3 +10,7 @@ Da VS Code ohne Python Highlighting kommt müssen folgende Pakete über den Exte
 * Python
 * Bracket Pair Colorizer (optional)
 
+Beispiel-Code:
+
+![](BeispielCodeIDE.png)
+
