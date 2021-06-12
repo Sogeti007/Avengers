@@ -5,7 +5,7 @@ from .models import Winner
 
 
 def home(request):
-    winners = Winner.object.all()
+    winners = Winner.objects.all()
     num_players = winners.count()
     best_player = winners.aggregate(Max('times_won'))
     #this_player = winners.filter(winner=).first()
