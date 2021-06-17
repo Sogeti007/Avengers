@@ -22,3 +22,19 @@ git config --global user.name "Name Nachname"
 git config --global user.email name.nachname@sogeti.com
 ```
 
+Branches werden benannt nach folgenden Regeln:
+
+```bash
+git checkout main
+git pull origin main
+git branch -b boot-X
+```
+
+Wenn Userstory Tasks hat:
+
+```
+git checkout main
+git pull origin main
+git branch -b boot-X-task-Y
+```
+
