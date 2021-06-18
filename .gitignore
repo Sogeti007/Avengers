@@ -1,2 +1,6 @@
 env
 __pycache__
+
+htmlcov
+db.sqlite3
+.coverage
