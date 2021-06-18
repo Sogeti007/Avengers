@@ -27,7 +27,7 @@ Branches werden benannt nach folgenden Regeln:
 ```bash
 git checkout main
 git pull origin main
-git branch -b boot-X
+git checkout -b boot-X
 ```
 
 Wenn Userstory Tasks hat:
@@ -35,6 +35,6 @@ Wenn Userstory Tasks hat:
 ```
 git checkout main
 git pull origin main
-git branch -b boot-X-task-Y
+git checkout -b boot-X-task-Y
 ```
 
