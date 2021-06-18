@@ -1,0 +1,7 @@
+[coverage:run]
+source = ./src/
+branch = True
+omit = 
+    src/manage.py
+    src/super_game/asgi.py
+    src/super_game/wsgi.py
