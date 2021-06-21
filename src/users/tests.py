@@ -1,7 +1,8 @@
 from django.test import TestCase
 from django.urls import reverse
 from django.test.client import RequestFactory
-from unittest import mock
+from django.contrib.auth.models import User
+
 
 class ViewRegisterTestCase(TestCase):
 
