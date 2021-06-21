@@ -1,4 +1,8 @@
 {% extends "main/base.html" %}
 {% block content %}
-<h1>That is where the Game should be!</h1>
+{% if user.is_authenticated %}
+<h1>Schön dich zu sehen {{ user.first_name }}</h1>
+{% else %}
+<h1>Bitte melde dich an!</h1>
+{% endif %}
 {% endblock %}
