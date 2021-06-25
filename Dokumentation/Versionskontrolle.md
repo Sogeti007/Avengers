@@ -30,7 +30,7 @@ git pull origin main
 git checkout -b boot-X
 ```
 
-Wenn Userstory Tasks hat:
+Wenn Userstories Tasks haben:
 
 ```
 git checkout main
@@ -38,3 +38,31 @@ git pull origin main
 git checkout -b boot-X-task-Y
 ```
 
+Wenn Änderungen an einem Branch vorgenommen wurden können diese in einem Commit zugefügt und der Commit ausgeführt werden. Angenommen Datei "foo.py" wird geändert, so kann die Änderung mit einem
+
+```bash
+git add foo.py
+```
+
+dem neuen Commit zugefügt werden. Ein
+
+```
+git status
+```
+
+gibt Informationen über über die aktuellen Änderungen und die für den Commit vorgemerkten Änderungen. Sind alle Dateien für einen Commit vorgemerkt kann der Commit mit
+
+```bash
+git commit -m"Nachricht"
+```
+
+durchgeführt werden. Die Zeichenkette "Nachricht" sollte dabei mit einer ausgetauscht werden, die den momentanen Commit beschreibt.  Der Commit ist jetzt nur Lokal vorhanden und muss noch auf den entsprechenden Branch gepushed werden. Dazu muss, sicherheitshalber, zuerst gepulled werden:
+
+```bash
+git pull origin branch-name
+git push -u origin branch-name
+```
+
+Notwendige Account Passwörter müssen eingegeben werden. Häufiges Pullen und möglichst kleine Commits sind eine gute Angewohnheit. 
+
+ 
