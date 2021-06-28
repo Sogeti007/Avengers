@@ -1,1 +1,1 @@
-web: gunicorn src.super_game.wsgi
+web: gunicorn super_game.wsgi --chdir src
