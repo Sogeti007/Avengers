@@ -1,1 +1,1 @@
-web: gunicorn --chdir ./src/ super_game.wsgi --logfile info.log
+web: gunicorn src.super_game.wsgi
