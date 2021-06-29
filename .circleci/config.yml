@@ -47,3 +47,4 @@ jobs:
           # This assumes pytest is installed via the install-package step above
           command: | 
            python src/manage.py test src --keepdb
+           
