@@ -11,3 +11,4 @@ Da VS Code ohne Python Highlighting kommt müssen folgende Pakete über den Exte
 * Bracket Pair Colorizer (optional)
 * HTML CSS Support
 
+In den entsprechenden linken Reitern der IDE kann man Änderungen bequem adden, einen entsprechenden Commit mit eine Nachricht versehen und dann in das remote Repository pushen.
