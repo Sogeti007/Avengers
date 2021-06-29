@@ -41,5 +41,8 @@ jobs:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
           command: | 
-           python src/manage.py test src --keepdb
+           coverage run --source="src/" ./src/manage.py test src -v 2 --keepdb
+           coverage report
+           
+           
            
