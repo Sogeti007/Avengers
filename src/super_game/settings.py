@@ -16,7 +16,6 @@ import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-TEST_RUNNER = 'django_heroku.HerokuDiscoverRunner'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -25,9 +24,12 @@ TEST_RUNNER = 'django_heroku.HerokuDiscoverRunner'
 SECRET_KEY = 'django-insecure-_mu@r2fe#y3jz_7ewixx290w8c4j++&_#ze3*ti%rgls$^!-tl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
 
-ALLOWED_HOSTS = ['.herokuapp.com']
+DEBUG = True
+APPEND_SLASH = True
+SECURE_SSL_REDIRECT = False
+
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -118,21 +120,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'console': {
-            'class': 'logging.StreamHandler',
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['console'],
-             'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
-        },
-    },
-}
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
