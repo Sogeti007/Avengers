@@ -12,7 +12,7 @@ class ViewRegisterTestCase(TestCase):
     def test_register_without_anything(self):
         url = reverse("register")
         response = self.client.get(url)
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, 500)
 
     def test_good_register(self):
         url = reverse("register")
