@@ -12,7 +12,7 @@ Einrichtung über die GUI auf der entsprechenden Webseite von [GitLab](https://g
 Checkout des Repositories funktioniert über:
 
 ```bash
-git clone "https://gitlab.com/JulianAtSogeti/praxisprojektbootcamp.git"
+git clone "https://github.com/Sogeti007/Avengers.git"
 ```
 
 Falls nicht schon als Standardeinstellung sollte jedes Teammitglied seinen Namen und seine E-Mail einstellen:
